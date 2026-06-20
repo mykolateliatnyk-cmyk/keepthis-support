@@ -2,81 +2,312 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Privacy Policy — Keep This</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
-  * { margin:0; padding:0; box-sizing:border-box; }
-  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background:#f9f9f7; color:#1a1a1a; line-height:1.7; }
-  .wrap { max-width:700px; margin:0 auto; padding:60px 24px 80px; }
-  h1 { font-size:32px; font-weight:700; margin-bottom:6px; }
-  .subtitle { color:#888; font-size:15px; margin-bottom:48px; }
-  h2 { font-size:18px; font-weight:600; margin:36px 0 10px; }
-  p { font-size:15px; color:#333; margin-bottom:12px; }
-  a { color:#e85a28; text-decoration:none; }
-  a:hover { text-decoration:underline; }
-  .section { border-top:1px solid #e8e8e4; padding-top:32px; margin-top:32px; }
-  .section:first-of-type { border-top:none; padding-top:0; margin-top:0; }
-  footer { margin-top:60px; padding-top:24px; border-top:1px solid #e8e8e4; font-size:13px; color:#aaa; }
+  :root {
+    --bg: #1a1a1a;
+    --card: #232323;
+    --text: #e8e8e6;
+    --text-dim: #a8a8a4;
+    --accent: #e85a28;
+    --border: #333;
+  }
+  * { box-sizing: border-box; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+  }
+  .wrap {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 56px 24px 96px;
+  }
+  header {
+    margin-bottom: 40px;
+  }
+  .app-name {
+    font-size: 14px;
+    color: var(--accent);
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+  }
+  h1 {
+    font-size: 32px;
+    font-weight: 700;
+    margin: 0 0 8px;
+    color: var(--text);
+  }
+  .updated {
+    color: var(--text-dim);
+    font-size: 14px;
+  }
+  .intro {
+    color: var(--text-dim);
+    font-size: 16px;
+    margin-top: 20px;
+  }
+  section {
+    margin-top: 40px;
+  }
+  h2 {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--text);
+    margin: 0 0 6px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--border);
+  }
+  .tag {
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 600;
+    color: var(--accent);
+    background: rgba(232, 90, 40, 0.12);
+    border-radius: 4px;
+    padding: 2px 8px;
+    margin-left: 8px;
+    vertical-align: middle;
+    text-transform: none;
+  }
+  p {
+    margin: 14px 0;
+    color: var(--text);
+  }
+  ul {
+    margin: 14px 0;
+    padding-left: 22px;
+  }
+  li {
+    margin-bottom: 10px;
+    color: var(--text);
+  }
+  .card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 18px 20px;
+    margin: 16px 0;
+  }
+  .card-title {
+    font-weight: 600;
+    color: var(--text);
+    margin-bottom: 4px;
+  }
+  .card-sub {
+    color: var(--text-dim);
+    font-size: 14px;
+    margin: 0;
+  }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 16px 0;
+    font-size: 14px;
+  }
+  th, td {
+    text-align: left;
+    padding: 10px 12px;
+    border-bottom: 1px solid var(--border);
+    color: var(--text);
+  }
+  th {
+    color: var(--text-dim);
+    font-weight: 600;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+  }
+  footer {
+    margin-top: 56px;
+    padding-top: 24px;
+    border-top: 1px solid var(--border);
+    color: var(--text-dim);
+    font-size: 13px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+  footer a { color: var(--text-dim); margin-right: 16px; }
+  footer a:hover { color: var(--accent); }
 </style>
 </head>
 <body>
 <div class="wrap">
-  <h1>Privacy Policy</h1>
-  <p class="subtitle">Keep This — AI Notes &nbsp;·&nbsp; Last updated: May 2025</p>
 
-  <div class="section">
-    <h2>Overview</h2>
-    <p>Keep This is a desktop sticky notes app for Mac. We take your privacy seriously. This policy explains what data we collect, how we use it, and what stays on your device.</p>
-  </div>
+  <header>
+    <div class="app-name">Keep This — AI Notes for Mac</div>
+    <h1>Privacy Policy</h1>
+    <div class="updated">Last updated: June 2026</div>
+    <p class="intro">Keep This is a desktop sticky notes app for Mac. This policy explains what data we collect, how we use it, what is sent to third-party services, and what stays on your device at all times.</p>
+  </header>
 
-  <div class="section">
+  <section>
     <h2>Data stored on your device</h2>
-    <p>All your notes are stored locally on your Mac. We do not upload, sync, or transmit your note content to any server. Your notes never leave your device.</p>
-    <p>The following data is stored locally in the app's data folder:</p>
-    <p>— Note content, font preferences, and window positions<br>
-       — Daily prediction text (generated once per day)<br>
-       — App settings (launch at login, dock visibility)</p>
-  </div>
+    <p>All your notes are stored locally on your Mac. We do not upload, sync, or transmit your note content to any server — except when you explicitly trigger an AI feature (described below).</p>
+    <p>The following data is stored locally in the app's data folder (<code>~/Library/Application Support/Keep This/</code>):</p>
+    <ul>
+      <li>Note content, font preferences, skin settings, and window positions</li>
+      <li>Daily prediction text (generated once per day and cached locally — not re-sent)</li>
+      <li>App settings: launch at login, dock visibility, language preference</li>
+      <li>An anonymous device identifier stored in the macOS Keychain (see "Anonymous Device Identifier" below)</li>
+    </ul>
+  </section>
 
-  <div class="section">
-    <h2>AI features</h2>
-    <p>Keep This uses the Claude API (by Anthropic) to power AI text editing and daily predictions. When you use an AI action, the text of your note is sent to a secure proxy server and then to Anthropic's API to generate a response.</p>
-    <p>We do not store your note content on our servers. Requests are processed in real time and not retained. Anthropic's data handling is governed by their <a href="https://www.anthropic.com/privacy" target="_blank">Privacy Policy</a>.</p>
-    <p>The Daily Prediction feature generates a short inspirational message once per day. No personal information is sent — only a prompt requesting a prediction.</p>
-  </div>
+  <section>
+    <h2>Anonymous Device Identifier</h2>
+    <p>Keep This generates a random identifier (a UUID) the first time the app launches, and stores it securely in the macOS Keychain. This identifier is not linked to your name, email address, Apple ID, or any other personal information — it identifies your installation of the app, not you as a person.</p>
+    <p>This identifier is used for:</p>
+    <ul>
+      <li><strong>App functionality</strong> — rate-limiting AI requests, and verifying your Pro subscription status with our backend.</li>
+      <li><strong>Anonymous product analytics</strong> — understanding which features are used, how often, and basic subscription conversion events (e.g. which plan was selected). This helps us decide what to build next.</li>
+    </ul>
+    <p>This identifier is never combined with advertising identifiers, never shared with advertising networks or data brokers, and is never used to show you ads or to track you across other apps or websites.</p>
+  </section>
 
-  <div class="section">
+  <section>
+    <h2>Product analytics <span class="tag">New in 1.1</span></h2>
+    <p>Starting with version 1.1, Keep This uses <strong>PostHog</strong> (EU-hosted) to collect anonymous, aggregated analytics about how the app is used. This helps us understand which features people find useful and improve the app over time.</p>
+    <div class="card">
+      <div class="card-title">What is sent to PostHog</div>
+      <ul>
+        <li>The anonymous device identifier described above (as the analytics distinct ID)</li>
+        <li>App events, such as feature usage, button taps, and which subscription plan a purchase event relates to (e.g. monthly or yearly)</li>
+        <li>Basic technical context (e.g. app version, OS version)</li>
+      </ul>
+    </div>
+    <div class="card">
+      <div class="card-title">What is never sent to PostHog</div>
+      <ul>
+        <li>Your note content or any text you write in the app</li>
+        <li>Your AI prompts or AI-generated responses</li>
+        <li>Your name, email address, Apple ID, or payment information</li>
+        <li>Your IP address used for advertising or cross-app tracking purposes</li>
+      </ul>
+    </div>
+    <p>This data is used solely for analytics — to evaluate feature usage and subscription performance — and never for advertising, ad measurement, or sharing with data brokers. Learn more about PostHog at <a href="https://posthog.com/privacy" target="_blank" rel="noopener">posthog.com/privacy</a>.</p>
+  </section>
+
+  <section>
+    <h2>AI text editing features <span class="tag">Claude API</span></h2>
+    <p>Keep This includes optional AI-powered text actions: Improve, Shorten, Expand, Motivate, Convert to Tasks, and a free-form custom prompt input. These features are only activated when you explicitly tap an AI action button.</p>
+    <p>When you use an AI feature, the text content of your current note is transmitted securely to our proxy server and forwarded to Anthropic's Claude API for processing. No other data is sent.</p>
+    <p><strong>How your input is protected:</strong></p>
+    <ul>
+      <li>The app's AI system includes a built-in content filter. Requests that are not related to note text editing are automatically rejected by the AI — the model is instructed to respond only to text editing tasks.</li>
+      <li>The free-form input field is limited to 200 characters and is subject to the same content filter as preset actions.</li>
+      <li>Your note text is not stored on our servers. Requests are processed in real time and immediately discarded after a response is returned.</li>
+      <li>We do not use your note content to train AI models. Anthropic's data handling policies apply to API calls — see <a href="https://anthropic.com/privacy" target="_blank" rel="noopener">anthropic.com/privacy</a>.</li>
+      <li>AI-generated content is returned as a suggestion. You can undo any AI transformation using the "Restore original" button that appears immediately after each action.</li>
+      <li>AI features require an active internet connection. If no connection is available, no data is sent and the feature will not activate.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Daily Prediction feature <span class="tag">Claude API</span></h2>
+    <p>Once per day, Keep This generates a short inspirational prediction using AI. This feature sends only a fixed generic prompt to the Claude API — no personal information, no note content, and no user-identifiable data is included in this request.</p>
+    <p>The generated prediction is cached locally and displayed for the remainder of the day. No additional requests are made until the next day.</p>
+  </section>
+
+  <section>
+    <h2>Subscriptions &amp; payments <span class="tag">Apple StoreKit</span></h2>
+    <p>Keep This Pro subscriptions are processed entirely by Apple through the App Store using StoreKit 2. We do not collect, store, or have access to your payment information, credit card details, or billing address.</p>
+    <p>All subscription management is handled through your Apple ID. You can view, modify, or cancel your subscription at any time in <strong>System Settings → Apple ID → Subscriptions</strong>.</p>
+    <p>As described above, when you start or complete a purchase, an anonymous analytics event noting which plan (monthly or yearly) was selected is recorded. This event is tied to your anonymous device identifier, not to your Apple ID or any payment details.</p>
+  </section>
+
+  <section>
     <h2>Data we do not collect</h2>
-    <p>Keep This does not collect:</p>
-    <p>— Your name, email, or any account information<br>
-       — Device identifiers or analytics<br>
-       — Crash reports or usage statistics<br>
-       — Location data<br>
-       — Any data from other apps on your Mac</p>
-  </div>
+    <ul>
+      <li>Your name, email address, or any account information</li>
+      <li>Payment information, credit card details, or billing address</li>
+      <li>Crash reports</li>
+      <li>Location data</li>
+      <li>Your IP address for advertising or tracking purposes</li>
+      <li>Data from other apps on your Mac</li>
+      <li>Note content or AI prompts outside of explicit, in-the-moment AI feature usage</li>
+    </ul>
+  </section>
 
-  <div class="section">
+  <section>
     <h2>Third-party services</h2>
-    <p>Keep This uses Supabase as a secure proxy to communicate with the Claude API. Supabase does not store your note content. You can learn more at <a href="https://supabase.com/privacy" target="_blank">supabase.com/privacy</a>.</p>
-  </div>
+    <p>Keep This uses the following third-party services. No name, email address, or payment information is shared with any of them:</p>
+    <table>
+      <tr><th>Service</th><th>Purpose</th><th>Data involved</th></tr>
+      <tr>
+        <td>Supabase</td>
+        <td>Secure API proxy between Keep This and the Claude API; subscription verification</td>
+        <td>Note text (in-transit only, not stored), anonymous device identifier</td>
+      </tr>
+      <tr>
+        <td>Anthropic (Claude API)</td>
+        <td>AI text editing and daily prediction generation</td>
+        <td>Note text (only when an AI feature is used), generic prompt for predictions</td>
+      </tr>
+      <tr>
+        <td>PostHog</td>
+        <td>Anonymous product analytics</td>
+        <td>Anonymous device identifier, feature usage events, subscription plan events</td>
+      </tr>
+      <tr>
+        <td>Apple App Store</td>
+        <td>In-app purchases and subscription billing</td>
+        <td>Handled entirely by Apple via StoreKit</td>
+      </tr>
+    </table>
+    <p>Learn more: <a href="https://supabase.com/privacy" target="_blank" rel="noopener">supabase.com/privacy</a> · <a href="https://anthropic.com/privacy" target="_blank" rel="noopener">anthropic.com/privacy</a> · <a href="https://posthog.com/privacy" target="_blank" rel="noopener">posthog.com/privacy</a></p>
+  </section>
 
-  <div class="section">
+  <section>
+    <h2>Data security</h2>
+    <ul>
+      <li>All communication with external services uses HTTPS/TLS encryption</li>
+      <li>The anonymous device identifier is stored in the macOS Keychain, which is encrypted and protected by the operating system</li>
+      <li>Note content is never written to any external storage or database</li>
+      <li>We do not have the technical ability to access your locally stored notes</li>
+    </ul>
+  </section>
+
+  <section>
     <h2>Children's privacy</h2>
-    <p>Keep This is not directed at children under the age of 13. We do not knowingly collect any information from children.</p>
-  </div>
+    <p>Keep This is not directed at children under the age of 13. We do not knowingly collect any information from children. The AI features include content filtering that rejects off-topic or harmful prompts. If you believe a child has used the app in a way that raises privacy concerns, please contact us.</p>
+  </section>
 
-  <div class="section">
+  <section>
+    <h2>Your rights</h2>
+    <p>Since we do not collect personal data such as your name or email address, there is no user account or profile to delete. All locally stored data (notes, settings, predictions) can be removed by uninstalling the app and deleting the app's data folder at <code>~/Library/Application Support/Keep This/</code>.</p>
+    <p>The anonymous device identifier in the Keychain — and the analytics history associated with it — can be cleared by uninstalling the app. Since the identifier is not linked to your name or email, we are unable to look up or delete an individual's data on request; uninstalling the app is the way to stop further data collection for that installation.</p>
+  </section>
+
+  <section>
     <h2>Changes to this policy</h2>
-    <p>We may update this Privacy Policy from time to time. Any changes will be reflected on this page with an updated date.</p>
-  </div>
+    <p>We may update this Privacy Policy from time to time. Any changes will be reflected on this page with an updated date. Continued use of the app after changes constitutes acceptance of the updated policy. Significant changes will be communicated through the app.</p>
+  </section>
 
-  <div class="section">
+  <section>
     <h2>Contact</h2>
-    <p>If you have any questions about this Privacy Policy, contact us at:<br>
+    <p>If you have any questions about this Privacy Policy or how your data is handled, contact us at:<br>
     <a href="mailto:keepthis.apps@gmail.com">keepthis.apps@gmail.com</a></p>
-  </div>
+    <p>We typically respond within 24 hours.</p>
+  </section>
 
-  <footer>© 2025 Mykola Teliatnyk · Keep This — AI Notes</footer>
+  <footer>
+    <div>
+      <a href="https://mykolateliatnyk-cmyk.github.io/keepthis-ai-notes/">Support</a>
+      <a href="mailto:keepthis.apps@gmail.com">Contact</a>
+    </div>
+    <div>© 2026 Mykola Teliatnyk · Keep This — AI Notes</div>
+  </footer>
+
 </div>
 </body>
 </html>
